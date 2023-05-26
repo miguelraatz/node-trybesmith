@@ -14,6 +14,7 @@ async function getOrders(): Promise<OrderSequelizeModel[]> {
     group: ['Order.id'],
     raw: true,
   });
+
   return orders;
 }
 
