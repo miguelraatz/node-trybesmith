@@ -2,12 +2,6 @@ import bcrypt = require('bcryptjs');
 import { ServiceResponse } from '../types/Service.response';
 import UserModel from '../database/models/user.model';
 import jwtUtils from '../utils/jwt.util';
-import { User } from '../types/User';
-
-async function getUserByUserName(username: string): Promise<User | unknown> {
-  const findeUser = await UserModel.findOne({ where: { username } });
-  return findeUser?.dataValues;
-}
 
 async function login(username: string, password: string): Promise<ServiceResponse<string>> {
   const user = await UserModel.findOne({ where: { username } });
@@ -20,5 +14,4 @@ async function login(username: string, password: string): Promise<ServiceRespons
 
 export default {
   login,
-  getUserByUserName,
 };

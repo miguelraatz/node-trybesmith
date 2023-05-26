@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 
-async function validateName(req: Request, res: Response, next: NextFunction) {
+async function validateName(req: Request, res: Response, next: NextFunction): Promise<unknown> {
   const { name } = req.body;
   if (!name) {
     return res.status(400).json({ message: '"name" is required' });

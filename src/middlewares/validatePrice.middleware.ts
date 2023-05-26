@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 
-async function validatePrice(req: Request, res: Response, next: NextFunction) {
+async function validatePrice(req: Request, res: Response, next: NextFunction): Promise<unknown> {
   const { price } = req.body;
   if (!price) {
     return res.status(400).json({ message: '"price" is required' });
