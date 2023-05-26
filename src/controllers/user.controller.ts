@@ -15,4 +15,6 @@ async function login(req: Request, res: Response): Promise<Response> {
   return res.status(200).json({ token: userLogin.data });
 }
 
-export default login;
+export default {
+  login,
+};
