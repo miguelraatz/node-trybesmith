@@ -1,10 +1,20 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Trybe Smith ⚔️
+
+Projeto de uma API de loja de itens medievais, utilizando um banco de dados SQL.
+
+A API foi construída utilizando os princípios REST e seguindo a arquitetura MSC (Model, Service, Controller).
+
+Suas principais funcionalidades são:
+- Cadastro, login e autenticação de pessoas usuárias
+- Busca e cadastro de productos
+- Busca e cadastro de pedidos
+
+## Tecnologias
+As tecnologias utilizadas para o desenvolvimento da aplicação foram:
+- Node.js
+- TypeScript
+- MySQL
+- Express
+- Json Web Token
+- Dotenv
+- Joi
